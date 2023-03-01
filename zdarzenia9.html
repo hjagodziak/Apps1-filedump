@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function sprawdzenie(f){
+		var n = f.pole1.value;
+		if(n==""){
+			f.pole1.focus();
+			return false;
+		}
+		var m = f.pole2.value;
+		if(m==""){
+			f.pole2.focus();
+			return false;
+		}
+	}
+	</script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<h1>Zaawansowana walidacja formularzy</h1>
+<form action="" method="post" onsubmit="return sprawdzenie(this)">
+<input type="text" id="pole1">
+<input type="text" id="pole2">
+<input type="submit" value="wyslij">
+</form>
+</body>
+</html>

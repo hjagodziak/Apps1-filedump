@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function zmiana1() {
+		document.getElementById("pole1").style.backgroundColor = "yellow";
+	}
+	function zmiana2() {
+		document.getElementById("pole1").style.backgroundColor = "#FFFFFF";
+	}
+	function zmiana3() {
+		document.getElementById("pole2").className = "styl2";
+	}
+	function zmiana4() {
+		document.getElementById("pole2").className = "styl1";
+	}
+	</script>
+	<style>
+	.styl1 {
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+	.styl2 {
+		background-color: #888888;
+		color: #222222;
+	}
+	</style>
+</head>
+<body onload="alert('Uwaaaga')">
+<h1>Zdarzenia formularza - onsubmit, onreset</h1>
+<h1>Zdarzenia dokumentu - onload, unload</h1>
+<h1>Zdarzenia na elementach formularzy - onfocus,onblur, onselect, onchange</h1>
+<form action="" method="post">
+<input type="text" id="pole1" onFocus="zmiana1()" onBlur="zmiana2()" onSelect="alert('Zaznaczono')">
+<input type="text" id="pole2" class="styl1" onFocus="zmiana3()" onBlur="zmiana4()" onSelect="alert('Zmieniono')">
+</form>
+</body>
+</html>

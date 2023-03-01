@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function szukaj() {
+		var tresc = document.getElementById("pole").value;
+		var wyraz = document.getElementById("wyraz").value;
+		var x = tresc.indexOf(wyraz); //zwraca -1 jeżeli nie ma lub index of którego się dany odciąg zaczyna, zwraca 0 gdy jest
+		if (x == -1){
+		document.getElementById("wynik").value = "NIE";
+		}
+		else {
+		document.getElementById("wynik").value = "TAK";
+		}
+	}
+	</script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia klawiatury - indexOf()</h1>
+<form>
+<input type="text" id="wyraz" onkeyup="szukaj()"><br>
+<textarea id="pole" onkeyup="szukaj()"></textarea><br>
+<input type="text" id="wynik" value="NIE">
+</form>
+</body>
+</html>

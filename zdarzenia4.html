@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function naczerwony() {
+		document.getElementById("w1").style.zIndex = "1";
+		document.getElementById("w2").style.zIndex = "0";
+		document.getElementById("w3").style.zIndex = "0";
+	}
+	function nazielony() {
+		document.getElementById("w1").style.zIndex = "0";
+		document.getElementById("w2").style.zIndex = "1";
+		document.getElementById("w3").style.zIndex = "0";
+	}
+	function nazolty() {
+		document.getElementById("w1").style.zIndex = "0";
+		document.getElementById("w2").style.zIndex = "0";
+		document.getElementById("w3").style.zIndex = "1";
+	}
+	function reset() {
+		document.getElementById("w1").style.zIndex = "0";
+		document.getElementById("w2").style.zIndex = "0";
+		document.getElementById("w3").style.zIndex = "0";
+	}
+	</script>
+	<style>
+	#w1 {
+		position: absolute;
+		left: 100px;
+		top: 100px;
+		width: 100px;
+		height: 200px;
+		background: red;
+		z-index: 0;
+	}
+	#w2 {
+		position: absolute;
+		left: 150px;
+		top: 200px;
+		width: 100px;
+		height: 200px;
+		background: green;
+		z-index: 0;
+	}
+	#w3 {
+		position: absolute;
+		left: 200px;
+		top: 300px;
+		width: 100px;
+		height: 200px;
+		background: yellow;
+		z-index: 0;
+	}
+	</style>
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia myszy na div</h1>
+<div id="w1" onmouseover="naczerwony()" onmouseout="reset()">To jest zawartość 1 warstwy</div>
+<div id="w3" onmouseover="nazolty()" onmouseout="reset()">To jest zawartość 3 warstwy</div>
+<div id="w2" onmouseover="nazielony()" onmouseout="reset()">To jest zawartość 2 warstwy</div>
+<script>
+//alert(document.getElementById("w1").style.zIndex);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function zlicz() {
+		document.getElementById("wynik").value = document.getElementById("pole").value.length
+	}
+	</script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia klawiatury - onkeypress, onkeyup, onkeydown</h1>
+<form>
+<textarea id="pole" onkeyup="zlicz()"></textarea><br>
+Długość tekstu: <input type="text" id="wynik" value="0">
+</form>
+</body>
+</html>

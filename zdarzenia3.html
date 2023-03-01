@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia myszy - obsługa zdarzeń jako własność</h1>
+<img id="img" src="kawa1.jpg" onmouseover="zdja()" onmouseout="zdjb()" height="250" width="250">
+<script>
+function zdja(){
+	document.getElementById("img").src = "kawa2.jpg";
+}
+function zdjb(){
+	document.getElementById("img").src = "kawa1.jpg";
+}
+</script>
+</body>
+</html>
