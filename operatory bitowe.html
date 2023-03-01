@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	</head>
+<body>
+
+<h1>Operatory bitowe</h1>
+
+	<script>
+var x=7; //111
+var y=5; //101
+
+var iloczyn=x & y; //101
+document.write(iloczyn +"<br>");
+
+
+x=12; //1100
+y=13; //1101
+
+var lub=x | y; //1101
+document.write(lub +"<br>");
+
+x=12;
+x=x>>1; //przesunięcie w prawo o 1 bit: 1100 -> 110
+document.write(x +"<br>");
+
+y=13;
+y=y<<2; //przesunięcie w lewo 0 2 bity: 1101 -> 110100
+document.write(y +"<br>");
+
+
+
+x=12; //1100
+y=13; //1101
+var rs=x ^ y; //różnica symetryczna: 0001
+document.write(rs +"<br>");
+	</script>
+
+</body>
+</html>

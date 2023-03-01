@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Tablice w JS - Obiekt Array</h1>
+<h2>Złożony typ danych</h2>
+<script>
+
+var liczby=new Array();
+liczby[0]=12;
+liczby[1]=22;
+liczby[2]=2;
+document.write("Wybrana liczba: " + liczby[1] + "<br>");
+document.write("Długość: " + liczby.length + "<br>");
+document.write("<hr>");
+
+var imiona=["Piotr", "Katarzyna", "Beata", "Olga"];
+document.write(imiona[0] + "<br>");
+document.write(imiona[1] + "<br>");
+document.write(imiona[2] + "<br>");
+document.write(imiona[3] + "<br>");
+document.write("<hr>");
+
+for(let i=0;i<imiona.length;i++){
+	document.write(imiona[i] + "<br>"); //zmienną sterującą pętlą
+}										//używamy do indeksowania elementów tablicy!
+document.write("<hr>");
+
+for(let i=imiona.length-1;i>=0;i--){
+	document.write(imiona[i] + "<br>");
+}		
+</script>
+</body>
+</html>

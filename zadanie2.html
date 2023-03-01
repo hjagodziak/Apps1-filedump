@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	var t = [];
+	for(let i=0;i<10;i++){
+		t[i] = Math.floor(Math.random()*9);
+		document.write(t[i]);
+	}
+	document.write("<br>");
+	var r = [];
+	for(let i=0;i<10;i++){
+		r[i] = Math.floor(Math.random()*9);
+		document.write(r[i]);
+	}
+	document.write("<br><br>");
+	var licznik=0;
+	for(let i=0;i<10;i++){
+		if(t[i]==r[i]){
+			licznik++;
+		}
+	}
+	document.write(licznik);
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function test() {
+		var zawartosc = document.getElementById("pole1").value;
+		//var wyrazenie = /^Ola|Ula|Ela$/; //var wyrazenie = new RegExp('');
+		//var wyrazenie = /^[^abg]$/;
+		//var wyrazenie = /^[a-zA-G]$/;
+		//var wyrazenie = /^[0-9,\.]$/;
+		//var wyrazenie = /^[0-9]+$/;
+		//var wyrazenie = /^[0-9]{3,5}$/;
+		//var wyrazenie = /^[0-9]{2}-[0-9]{3}$/;
+		//var wyrazenie = /^[a-zA-Z]{2,}\s[a-zA-Z]{2,}-[a-zA-Z]{1,}$/;
+		//var wyrazenie = /^[1-9]{1}[0-9]{0,5}[,\.]{1}[0-9]{2}$/;
+		//var wyrazenie = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-z]{2,3}$/;
+		var wyrazenie = /^(http[s]?:\/\/)?www\.[a-z\._]+\.[a-z]{2,}$/;
+		if(wyrazenie.test(zawartosc)) {
+			alert("OK");
+		}
+	}
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<h1>Wyrażenia regularne w JS</h1>
+<form action="" method="post">
+<input type="text" id="pole1">
+<input type="button" value="testuj" onClick="test()">
+</form>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Daty</h1>
+<script>
+var data = new Date();
+document.write("Format lokalny: " + data.toString());
+document.write("<br>");
+document.write("Format uniwersalny: " + data.toGMTString());
+document.write("<br>");
+document.write("Format regionalny: " + data.toLocaleString());
+document.write("<br>");
+
+//var data2 = new Date(r,m,d);
+var data2 = new Date(2020,11,10);
+document.write(data2.toString());
+document.write("<br>");
+
+//chcemy odwrotnie d m r
+var m=data.getMonth()
+document.write("Miesiąc: " + m);
+document.write("<br>");
+var miesiace = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"];
+document.write("Miesiąc: " + miesiace[m]);
+document.write("<br>");
+
+var mm=m+1;
+var r = data.getFullYear();
+//podr str 82
+var d = data.getDate();
+document.write("Dzisiaj mamy: " + "0" + d + "." + "0" + mm + "." + r);
+document.write("<br>");
+
+var r = data.getFullYear();
+var d = data.getDate();
+document.write("Dzisiaj mamy: " + d + " " + miesiace[m] + " " + r);
+document.write("<br>");
+</script>
+</body>
+</html>

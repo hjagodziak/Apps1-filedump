@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+		//zadanie//
+		//napisać funkcję, która oblicza sumę kolejnych liczb od 1 do podanej.
+		//następnie obliczyć sumę sum oddzielnie z sum parzystych i nieparzystych
+		function s(n)
+		{
+			var wynik = 0;
+			for(let i=1;i<=n;i++)
+			{
+				wynik += i;
+			}
+			return wynik;
+		}
+	</script>
+</head>
+<body>
+<script>
+	var liczba = prompt("Podaj liczbę:");
+	var ssp = 0;
+	var ssnp = 0;
+	for(let i=1;i<=liczba;i++)
+	{
+		let wynik = s(i);
+		if(wynik%2 == 0)
+		{
+			ssp += wynik;
+		}
+		else ssnp += wynik;
+	}
+	document.write(ssp + " " + ssnp);
+</script>
+</body>
+</html>

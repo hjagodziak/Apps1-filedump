@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+var t = new Array(10);
+for(let i=0;i<10;i++){
+	t[i] = Math.round(Math.random()*9);
+	document.write(t[i] + " ");
+}
+
+document.write("<br>");
+document.write("<br>");
+
+var licznika = 0;
+for(let i=0;i<=5;i++){
+	if(t[i]<5){
+		licznika++;
+	}
+}
+
+var licznikb = 0;
+for(let j=5;j<=10;j++){
+	if(t[j]>5){
+		licznikb++;
+	}
+}
+
+if(licznika==5 && licznikb==5){
+	document.write("Jest podział");
+}
+
+var licznikc = 0;
+for(let k=0;j<=10;k++){
+	if(t[k]==t[k+1]&&t[k+1]==t[k+2]){
+		licznikc++;
+	}
+}
+document.write("Jest: " + licznikc + " powtórzeń");
+</script>
+</body>
+</html>

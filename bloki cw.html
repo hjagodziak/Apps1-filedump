@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Bloki - kodowanie</h1>
+<script>
+/*var a = prompt("Podaj a");
+var b = prompt("Podaj b");
+var c = prompt("Podaj c");
+a = parseInt(a);
+b = parseInt(b);
+c = parseInt(c);
+if(a>b+c){
+	if(b>c){
+	b*=c;
+	document.write(a + " " + b + " " + c);
+	}
+	else{
+	c*=2;
+	document.write(a + " " + b + " " + c);
+	}
+}
+else{
+	a+=2;
+	document.write(a + " " + b + " " + c);
+}*/
+
+
+
+/*var x = prompt("Wprowadź x:");
+x = parseInt(x);
+var w=1;
+for(let i=1;i<=x;i++){
+	w=w*5;
+}
+document.write(w);*/
+
+
+
+/*var a=0;
+var s=0;
+do{
+	s+=a;
+	a=prompt("Wprowadź a:");
+	a=parseInt(a);
+}while(a<=5);
+document.write(s);*/
+
+
+
+var a=[];
+for(let i=1;i<=6;i++){
+	a[i]=prompt("Wprowadź liczbę " + i);
+	a[i]=parseInt(a[i]);
+}
+var n=6/2;
+while(i<=n){
+	if(a[i]!=a[7-i]){
+		document.write("NIE");
+		break;
+	}
+}
+</script>
+</body>
+</html>

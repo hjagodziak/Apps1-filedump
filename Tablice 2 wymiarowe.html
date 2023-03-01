@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Tablice 2 wymiarowe</h1>
+<script>
+var liczby = new Array();
+liczby[0] = new Array(3,4,5);
+liczby[1] = new Array('a','b');
+document.write(liczby[1][1]);
+liczby[2] = new Array(7,6,5,4,2);
+document.write('<br>');
+document.write(liczby[2][2]);
+document.write('<br>');
+
+var t = new Array(3,4,7,12);
+document.write(t[2]);
+document.write('<br>');
+t[2] = new Array('Ola','Ula','Piotr');
+document.write(t[2]);
+document.write('<br>');
+document.write(t[2][1]);
+document.write('<br>');
+var osoby = []; //new Array();
+osoby[0] = [1,'Ala','Nowak'];
+osoby[1] = [2,'Piotr','Kowalski'];
+document.write('<br>');
+document.write(osoby[0][2] + ' ' + osoby[1][2]);
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Algorytmy na tablicach</h1>
+<h2>Przekazywanie tablicy do funkcji</h2>
+<script>
+//funkcja wyszukuje i zwraca najmniejszą wartość z tablicy
+function minimalna(tablica){
+	var najmniejsza = tablica[0];
+	for(let i=1;i<tablica.length;i++){
+		if(tablica[i]<najmniejsza) najmniejsza=tablica[i];
+	}
+	return najmniejsza;
+}
+
+//poprosimy użytkownika ile elementów chce wprowadzić i je wprowadzimy
+var n=prompt("Ile elementów?");
+n=parseInt(n);
+var t=new Array(n);
+for(let i=0;i<n;i++){
+	t[i]=prompt("t[" + i + "]=");
+	document.write(t[i] + "<br>");
+}
+var wynik=minimalna(t);
+
+document.write("<hr>");
+
+document.write(wynik);
+
+var p=[];
+for(let i=0;i<n;i++){
+	p[i]=Math.random()*100;
+	document.write(p[i] + "<br>");
+}
+
+</script>
+</body>
+</html>

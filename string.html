@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h3>-Wprowadzić imię i nazwisko poprzez prompt, następnie wypisać wielkimi literami
+inicjały(pierwdzą literę imienia i nazwiska(np. Jan Kowal -> JK))<br>
+-Wprowadzić wyraz poprzez prompt, jeżeli ciągi znaków składające się z 2 pierwszych 
+znaków i 2 ostatnich znaków są równe (np. abdgdgdgab) to wypisać komunikat "OK"</h3>
+<script>
+var imie = prompt("Imię:");
+var nazwisko = prompt("Nazwisko:");
+var inicjaly = imie[0].toUpperCase() + nazwisko[0].toUpperCase();
+document.write(inicjaly);
+
+document.write("<br>");
+document.write("<br>");
+
+var wyraz = prompt("Wprowadź wyraz:");
+if(wyraz.length>=4){
+	var pw = wyraz.substr(0,2);
+	var pk = wyraz.substr(wyraz.length-2,2);
+	if(pw==pk){
+		document.write("OK");
+	}
+}
+else alert("Zbyt krótki tekst!");
+</script>
+</body>
+</html>

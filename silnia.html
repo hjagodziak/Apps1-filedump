@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Oblicza silnie (iloczyn kolejnych liczb)</h1>
+<script>
+var n;
+var silnia=1;
+n=prompt("Podaj liczbę:");
+n=parseInt(n);
+if(n>0){
+for(var i=1;i<=n;i++){
+silnia*=i; // silnia = silnia * i;
+}
+document.write("Suma: " + silnia);
+}
+else{
+document.write("Niepoprawne dane.");
+}
+</script>
+
+</body>
+</html>

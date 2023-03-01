@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Programowanie obiektowe</h1>
+<h2>Spis lotów</h2>
+<script>
+
+function Lot(numer, miejsc) {
+this.numer = numer;
+this.miejsc = miejsc;
+}
+
+var lot1 = new Lot("1234", 200);
+document.write("Lot: " + lot1.numer + " Miejsc: " + lot1.miejsc + "<br>");
+
+var lot2 = new Lot("2321", 450);
+document.write("Lot: " + lot2.numer + " Miejsc: " + lot2.miejsc + "<br>");
+</script>
+</body>
+</html>

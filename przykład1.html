@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	var x = 0;
+	var t = null; //na potrzeby setInterval
+	function test(){
+		x++;
+		document.getElementById("okno").innerHTML=x;
+		
+		if(x>10) clearInterval(t);
+	}
+	</script>
+</head>
+<body>
+<h1>set interval - prz. 1</h1>
+<div id="okno">To jest moje okno</div>
+<input type="button" value="click me" onClick="test()">
+
+<script>
+t = setInterval("test()", 100);
+</script>
+</body>
+</html>

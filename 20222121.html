@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>sumuje liczby od 1 do n</h1>
+<h2>1+2+3+4+5...</h2>
+<script>
+var n;
+var suma=0;
+n=prompt("Podaj liczbę:");
+n=parseInt(n);
+if(n>0){
+for(var i=1;i<=n;i++){
+suma+=i;
+}
+document.write("Suma: " + suma);
+}
+else{
+document.write("Niepoprawne dane.");
+}
+</script>
+
+</body>
+</html>

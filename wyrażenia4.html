@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	/*function test() {
+		var zawartosc1 = document.getElementById("pole1").value;
+		var wyrazenie1 = /^[a-zA-Z0-9]{2,20}$/;
+		var zawartosc2 = document.getElementById("pole2").value;
+		var wyrazenie2 = /^[a-zA-Z0-9]{2,20}$/;
+		var zawartosc3 = document.getElementById("pole3").value;
+		var wyrazenie3 = /^[a-zA-Z0-9]{2,20}$/;
+		if(wyrazenie1.test(zawartosc1) && wyrazenie2.test(zawartosc2) && wyrazenie3.test(zawartosc3)) {
+			alert("OK");
+		}
+	}*/
+	function test() {
+		var flaga = true; //zakładam, że wszystkie są ok
+		var p1 = document.getElementById("pole1").value;
+		var d1 = p1.length;
+		if(d1<2 || d1>20) {
+			flaga=false;
+		}
+		var p2 = document.getElementById("pole2").value;
+		var d2 = p2.length;
+		if(d2<2 || d2>20) {
+			flaga=false;
+		}
+		var p3 = document.getElementById("pole3").value;
+		var d3 = p3.length;
+		if(d3<2 || d3>20) {
+			flaga=false;
+		}
+		if(flaga){
+			alert("OK");
+		}
+		else{
+			alert("NIE OK");
+		}
+	}
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<h1>Zastosowanie pętli do walidacji pól</h1>
+<h2>3 pola i w każdym ciąg długośći od 2 do 20 znaków</h2>
+<form action="" method="post">
+<input type="text" id="pole1">
+<input type="text" id="pole2">
+<input type="text" id="pole3">
+<input type="button" value="testuj" onClick="test()">
+</form>
+<script>
+</script>
+</body>
+</html>

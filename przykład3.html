@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<style>
+	#czas{
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		background-color: #AABBCC;
+		width: 200px;
+		height: 50px;
+	}
+	</style>
+	<script>
+	function zegarek(){
+		var d = new Date();
+		var data = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+		document.getElementById("czas").innerHTML = "<b>"+data+"</b>";
+	}
+	setInterval("zegarek()",100);
+	</script>
+</head>
+<body>
+<h1>setInterval - prz. 3 - czas</h1>
+<div id="czas">Tu będzie zegar</div>
+</body>
+</html>

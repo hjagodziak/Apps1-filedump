@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<style>
+	
+	</style>
+	<script>
+		function silnia(n)
+		{
+			var wynik = 1;
+			for(let i=2;i<=n;i++)
+			{
+				wynik*=i; //wynik = wynik * i;
+			}
+			return wynik;
+		}
+	</script>
+</head>
+<body>
+<script>
+	var liczba = prompt("Podaj liczbę:");
+	var ss = 0;
+	for(let i=1;i<=liczba;i++)
+	{
+		ss = ss + silnia(i);
+	}
+	document.write(ss);
+</script>
+</body>
+</html>

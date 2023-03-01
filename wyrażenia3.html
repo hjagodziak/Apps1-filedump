@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function liczenie() {
+		var p = document.getElementById("pole1").value;
+		var licznik = 0; //do obliczenia ilości znaków
+		for(let i=0;i<p.length;i++){
+			if(p.charAt(i)=='@'){
+				licznik++;
+			}
+		}
+		alert(licznik + " @");
+	}
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<h1>Zastosowanie pętli do walidacji pól</h1>
+<h2>Ile w polu użytkownik wprowadził @?</h2>
+<form action="" method="post">
+<input type="text" id="pole1">
+<input type="button" value="testuj" onClick="liczenie()">
+</form>
+<script>
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Programowanie obiektowe</h1>
+<h2>Konstruktory klas</h2>
+<script>
+
+function Osoba(nazwisko, imie) { //nazwisko w nawiasach to parametr
+this.nazwisko = nazwisko; //nazwisko to własność osoby
+this.imie = imie;
+document.write("utworzono osobe = " + this.nazwisko + "<br>")
+}
+
+var osoba1 = new Osoba("Nowak", "Jan"); //utworzenie obiektu osoby
+document.write(osoba1.nazwisko + "<br>");
+
+var osoba2 = new Osoba("Kowalski", "Marek"); //utworzenie obiektu osoby
+document.write(osoba2.nazwisko + "<br>");
+document.write("imie pierwszej osoby = " + osoba1.imie)
+document.write("<br>")
+document.write("imie drugiej osoby = " + osoba2.imie)
+</script>
+</body>
+</html>

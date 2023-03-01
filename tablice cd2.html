@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>mamy tablice 10 cyfr.<h1>
+<h2>a) czy po 1 wystepuje 2 ?</h2>
+<h2>b) ile razy po 1 występuje 2 ?</h2>
+<h2>c) ile razy po 1 występuje 2 ?</h2>
+<script>
+var t = new Array(1,1,2,3,4,5,1,2,3);
+//a
+for(var i=0;i<=t.length-2;i++){
+	if(t[i] == 1 && t[i+1] == 2){
+		document.write("TAK, na pozycji: " + i + "<br>");
+	}
+}
+document.write("<hr>");
+//b
+var licznik=0;
+for(var i=0;i<=t.length-2;i++){
+	if(t[i] == 1 && t[i+1] == 2) licznik++;
+}
+document.write("Wystąpiło " + licznik + " razy");
+document.write("<hr>");
+//c
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia myszy - obsługa zdarzeń jako własność</h1>
+<form>
+<input type="button" id="x" value="ok" onClick="test()">
+</form>
+<!-- najpierw obiekt potem możemy się do niego odwoływać-->
+<script>
+function test(){
+	alert("działa");
+}
+document.getElementById("x").onClick = test;
+</script>
+</body>
+</html>

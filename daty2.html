@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h3>Napisać skrypt, który na podstawie daty wyświetla aktualną godzinę, minutę i sekundę
+w formacie gg:mm:ss oraz polską nazwę dnia tygodnia.
+Dodatkowo jeżeli jest sobota lub niedziela to komunikat: Mamy weekend</h3>
+<script>
+var data = new Date();
+var gg = data.getHours();
+if(gg<10) gg =  "0" + gg;
+var mm = data.getMinutes();
+if(mm<10) mm = "0" + mm;
+var ss = data.getSeconds();
+if(ss<10) ss = "0" + ss;
+var godzina = gg + ":" + mm + ":" + ss;
+
+document.write(godzina);
+document.write("<br>");
+
+var tydz = new Array(7);
+tydz[0] = "niedziela ";
+tydz[1] = "poniedziałek ";
+tydz[2] = "wtorek ";
+tydz[3] = "środa ";
+tydz[4] = "czwartek ";
+tydz[5] = "piątek ";
+tydz[6] = "sobota ";
+
+var nr = data.getDay();
+document.write(tydz[nr]);
+document.write("<br>");
+if(nr==0 || nr==6) document.write("Mamy weekend");
+</script>
+</body>
+</html>

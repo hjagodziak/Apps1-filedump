@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function test() {
+		//var x = document.forms[0].elements[0].value;
+		//var x = document.forms[0].pp.value;
+		//var x = document.getElementById('pp').value;
+		//var x = document.forms['f1'].elements[1].value;
+		//alert(x);
+		//var x = document.forms[0].pp.value;
+		//document.forms[0].qq.value = x;
+		//var x = document.getElementById("pp").value;
+		//document.getElementById("qq").value = x;
+		document.getElementById("qq").value = document.getElementById("pp").value;
+	}
+	</script>
+</head>
+<body>
+<center>
+<h1>DOM - ćwiczenia</h1>
+<form id="f1" action="" method="post">
+<input type="button" value="Ok" onClick="test();">
+<input type="text" name="p" id="pp" value="Hubert">
+<input type="text" name="q" id="qq" value="">
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	var t=[];
+	var k=0;
+	function tester(){
+		for(let j=0; document.forms.length;j++){
+		var x = document.forms[j];
+		for(let i=0;i<x.length;i++){
+			t[k]=x[i].value + "<br>";
+			k++;
+		}
+		for(let i=0;i<t.length;i++){
+			document.write(t[i]);
+		}
+		}
+	}
+	</script>
+</head>
+<body>
+<center>
+<h1>DOM - formularze c.d</h1>
+<form action="" method="post">
+<input type="text" name="imie">
+<input type="checkbox" name="zaznaczenie">
+<input type="radio" name="plec" value="k">Kobieta
+<input type="radio" name="plec" value="m">Mężczyzna
+<br>
+<select name="miasto" multiple>
+<option>Poznań</option>
+<option>Warszawa</option>
+<option>Kraków</option>
+</select>
+<br>
+<input type="button" value="testuj" onClick="tester();">
+</form>
+<br>
+<form action="" method="post">
+<input type="text" name="imie">
+<input type="text" name="imie">
+</form>
+</center>
+</body>
+</html>

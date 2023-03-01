@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Algorytmy na tablicy</h1>
+<h2>Losowanie do tablicy liczb i wyznaczanie wartości max i min</h2>
+<script>
+//losujemy 10 liczb od 0 do 20
+
+var tablica = new Array(10);
+
+for(var i=0;i<10;i++){
+tablica[i] = Math.floor(Math.random()*20+1);
+document.write(tablica[i] + "<br>");
+//if(i==4){break}; //dodatkowo napisane
+}
+document.write("<hr>"); //dodatkowo napisane
+document.write("Piąta liczba z tablicy: " + tablica[4]); //dodatkowo napisane
+
+//szukanie maksa
+var maksymalna = tablica[0];
+for(let i=1;i<10;i++){
+if(tablica[i]>maksymalna){maksymalna=tablica[i]};
+}
+document.write("<hr>");
+document.write("Maksymalna: " + maksymalna);
+
+//szukanie mina
+var minimalna = tablica[0];
+for(let i=1;i<10;i++){
+if(tablica[i]<minimalna){minimalna=tablica[i]};
+}
+document.write("<hr>");
+document.write("Minimalna: " + minimalna);
+</script>
+</body>
+</html>

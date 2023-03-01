@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	/*function test(){
+		var flaga = true;
+		var p1 = document.getElementById("p1").value.length;
+		if(p1==0) flaga = false;
+		var p2 = document.getElementById("p2").value.length;
+		if(p2==0) flaga = false;
+		var p3 = document.getElementById("p3").value.length;
+		if(p3==0) flaga = false;
+		var p4 = document.getElementById("p4").value.length;
+		if(p4==0) flaga = false;
+		if(flaga) alert("OK");
+	}*/
+	/*function test(){
+		var licznik = 0;
+		var p1 = document.getElementById("p1").value.length;
+		if(p1==0) licznik++;
+		var p2 = document.getElementById("p2").value.length;
+		if(p2==0) licznik++;
+		var p3 = document.getElementById("p3").value.length;
+		if(p3==0) licznik++;
+		var p4 = document.getElementById("p4").value.length;
+		if(p4==0) licznik++;
+		alert(licznik + " pustych pól");
+	}*/
+	/*function test(){
+		var licznik = 0;
+		var p1 = document.getElementById("p1").value.length;
+		if(p1==0) licznik++;
+		var p2 = document.getElementById("p2").value.length;
+		if(p2==0) licznik++;
+		var p3 = document.getElementById("p3").value.length;
+		if(p3==0) licznik++;
+		var p4 = document.getElementById("p4").value.length;
+		if(p4==0) licznik++;
+		alert(licznik + " pustych pól");
+	}*/
+	var p1 = 0;
+	var p2 = 0;
+	var p3 = 0;
+	var p4 = 0;
+	function focus(a){
+		switch(a){
+			case 1: p1++;break;
+			case 2: p2++;break;
+			case 3: p3++;break;
+			case 4: p4++;break;
+		}
+	}
+	function test(){
+		alert (p1 + p2 + p3 + p4 + " focusów");
+	}
+	</script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<form action="" method="post">
+<input type="text" id="p1" onfocus="focus(1);">
+<input type="text" id="p2" onfocus="focus(2);">
+<input type="text" id="p3" onfocus="focus(3);">
+<input type="text" id="p4" onfocus="focus(4);">
+<input type="button" value="OK" onClick="test();">
+</form>
+</body>
+</html>

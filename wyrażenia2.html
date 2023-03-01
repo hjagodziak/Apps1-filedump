@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<script>
+	function test() {
+		var zawartosc = document.getElementById("pole1").value;
+		//var wyrazenie = /^[0-9]{2,2}\ ?[0-9]{4,4}\ ?[0-9]{4,4}\ ?[0-9]{4,4}\ ?[0-9]{4,4}\ ?[0-9]{4,4}\ ?[0-9]{4,4}\ ?$/;
+		var wyrazenie = /^[0-9]{2}(\ ?[0-9]{4}){6}$/;
+		if(wyrazenie.test(zawartosc)) {
+			alert("OK");
+		}
+	}
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+<h1>Wyrażenia regularne w JS</h1>
+<form action="" method="post">
+<input type="text" id="pole1">
+<input type="button" value="testuj" onClick="test()">
+</form>
+<script>
+</script>
+</body>
+</html>

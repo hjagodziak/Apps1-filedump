@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Funkcje w JS</h1>
+<script>
+//to niezależny fragment programu
+
+function dodaj(a,b){
+var suma=a+b;
+return suma; //zwraca tą wartość do miejsca wywołania funkcji
+}
+
+var x = dodaj(dodaj(2,8),20); //najpierw dodaj(2,8) zwraca 10 i wtedy dodaj(10,20)
+document.write(x);
+
+document.write("<br>");
+
+var y = 2*dodaj(3,8) + dodaj(-2,8);
+document.write(y);
+
+//funkcja, która zwraca większą wartość na podstawie 2 wprowadzonych liczb
+
+function sprawdz(x,y){
+if(x>y) return x;
+else return y; //nie trzeba "else", dlaczego?
+}
+
+document.write("<br>");
+document.write("<br>");
+
+var a=prompt("a=");
+var b=prompt("b=");
+var c=prompt("c=");
+a=parseInt(a);
+b=parseInt(b);
+c=parseInt(c);
+var wynik = sprawdz(sprawdz(a,b),c);
+document.write(wynik);
+</script>
+</body>
+</html>

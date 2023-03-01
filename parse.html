@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Funkcje wbudowane - parseInt(), parseFloat(), isNaN()</h1>
+<script>
+//parseInt() Int(Integer = całkowite)
+
+var x=parseInt("z123zse"); // NaN - not a number
+document.write(x + "<br>");
+
+var x=parseInt("1011", 2); // system dwójkowy (x=parseInt("zakodowana liczba", jak jest zakodowana);
+document.write(x + "<br>");
+//parseInt("") - że z 16-tkowego ==== parseInt("212", 16);
+document.write("<hr>");
+//parseFloat()
+
+var v=parseFloat("123,55");
+document.write(v + "<br>");
+
+var v=parseFloat("123.55");
+document.write(v + "<br>");
+
+document.write("<hr>");
+
+var z=prompt("Podaj liczbe:");
+if(isNaN(z)) document.write("Źle wprowadzono liczbę");
+else{
+z=parseFloat(z);
+document.write(z + "<br>");
+}
+</script>
+</body>
+</html>

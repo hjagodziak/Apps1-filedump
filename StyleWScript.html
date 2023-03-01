@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<style>
+	.typowa {
+		color: #000000;
+		font-size: 20px;
+	}
+	.alertowa {
+		color: #ff0000;
+		font-size: 21px;
+	}
+	</style>
+	<script>
+	function zmiana() {
+		document.getElementById("p1").className="alertowa";
+	}
+	</script>
+</head>
+<body>
+<form action="" method="post">
+<p id="p1" class="typowa">To jest akapit 1</p>
+<p id="p2" class="typowa">To jest akapit 2</p>
+<input type="button" value="przycisk" onClick="zmiana();">
+</form>
+</body>
+</html>

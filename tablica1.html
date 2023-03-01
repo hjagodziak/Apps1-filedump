@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<style>
+	
+	</style>
+	<script>
+		//ile jest róznych miast?
+		var licznik = 0;
+		var t = new Array("Poznań","Poznań","Warszawa","Poznań","Kraków","Gdańsk","Wrocław","Warszawa","Szczecin","Warszawa");
+		for(let i=0;i<t.length;i++){
+			if(t[i]!=""){
+				for(let j=i+1;j<t.length;j++){
+					if(t[i]==t[j]) t[j]="";			
+				}
+				licznik++;
+			}
+		}
+		for(let i=0;i<t.length;i++){
+			document.write(t[i] + "<br>");
+		}
+		document.write(licznik + "<br>");
+	</script>
+</head>
+<body>
+</body>
+</html>

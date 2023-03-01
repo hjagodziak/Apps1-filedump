@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+var imie=prompt("Podaj imie:");
+var naz=prompt("Podaj nazwisko:");
+if(imie.length>2 && naz.length>2){
+	if(imie[imie.length-1]=="a"){
+		document.write("Szanowna pani " + imie + " " + naz);
+	}
+	else document.write("Szanowny pan " + imie + " " + naz);
+	document.write("<br>");
+	if(imie.substr(0, 3)==naz.substr(0, 3)){
+		document.write("Ooo");
+	}
+}
+else document.write("Za krótkie!");
+</script>
+</body>
+</html>

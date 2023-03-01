@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+var data = new Date();
+var rok = data.getFullYear();
+var tygod = data.getDay();
+var miesiac = data.getMonth();
+
+var MonthName = new Array(12);
+MonthName[0] = "stycznia ";
+MonthName[1] = "lutego ";
+MonthName[2] = "marca ";
+MonthName[3] = "kwietnia ";
+MonthName[4] = "maja ";
+MonthName[5] = "czerwca ";
+MonthName[6] = "lipca ";
+MonthName[7] = "sierpnia ";
+MonthName[8] = "września ";
+MonthName[9] = "października ";
+MonthName[10] = "listopada ";
+MonthName[11] = "grudnia ";
+ 
+var DayName = new Array(7);
+DayName[0] = "niedziela ";
+DayName[1] = "poniedziałek ";
+DayName[2] = "wtorek ";
+DayName[3] = "środa ";
+DayName[4] = "czwartek ";
+DayName[5] = "piątek ";
+DayName[6] = "sobota ";
+
+var dzien = data.getDate();
+var godzina = data.getHours();
+var minuta = data.getMinutes();
+var sekunda = data.getSeconds();
+
+document.write("<center><h1>");
+document.write("<br>" + dzien + "<br>");
+document.write(MonthName[miesiac] + "<br>");
+document.write(rok + "</h1><br>");
+document.write("<h2>Czas: " + godzina + ":" + minuta + ":" + sekunda + "</h2><br>");
+document.write("</center>");
+</script>
+</body>
+</html>

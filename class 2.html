@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Wstęp do programowania obiektowego - class</h1>
+<script>
+class pracownik {
+//constructor - funkcja sama się uruchamia w chwili tworzenia obiektu
+constructor (imie, nazwisko, zarobki){
+	this.imie=imie;
+	this.nazwisko=nazwisko;
+	this.zarobki=zarobki;
+	document.write("utworzono pracownika<br>");
+	}
+podwyzka(x){
+	this.zarobki += x;
+	}	
+wypisz(){
+	document.write("imie = " + this.imie + "<br>");
+	document.write("nazwisko = " + this.nazwisko + "<br>");
+	document.write("zarobki = " + this.zarobki + "<hr>");
+	}
+}
+var prac1 = new pracownik("Urszula", "Kowalska", 4500); //tyle parametrów ile konstruktorów oczekuje
+document.write(prac1.zarobki + "<br>");
+prac1.podwyzka(500);
+document.write(prac1.zarobki + "<br>");
+prac1.wypisz();
+var prac2 = new pracownik("Grzegorz", "Grzegorzewicz", 6200);
+prac2.wypisz();
+</script>
+</body>
+</html>

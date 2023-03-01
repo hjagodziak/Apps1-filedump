@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Zasięg zmiennych - var, bez var, let</h1>
+<h2>zmienne globalne - widziane w całym skrypcie: bez var</h2>
+<h2>zmienne lokalne - widziane w funkcji: var</h2>
+<h2>zmienne blokowe - widziane w bloku {...}: let</h2>
+<script>
+a=5;
+b=6;
+function test(){
+	var a = 10; // a widziane tylko wewnątrz tej funkcji
+	b=2*a; // b zmienna globalna
+	document.write("a wyświetlane ww funkcji:" + a); // lokalna przykrywa globalną
+	document.write("<br>");
+}
+test();
+if(2>1){
+	let c=100;
+	document.write("c wewnątrz bloku: " + c);
+	document.write("<br>");
+}
+document.write(a);
+document.write("<br>");
+document.write(b);
+</script>
+</body>
+</html>

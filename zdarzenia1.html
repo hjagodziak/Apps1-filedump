@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+	<style>
+		.normalny {
+			border-color: black;
+		}
+		.inny {
+			border-color: red;
+		}
+	</style>
+</head>
+<body>
+<h1>Zdarzenia w JS - zdarzenia myszy - obsługa zdarzeń jako własność</h1>
+<h2>onclick, ondblclick, onmouseover, onmouseout, onmouseup, onmousemove, onmousedown</h2>
+<form>
+<input class="normalny" type="text" id="pole1" value="wpisz nazwisko" ondblclick="nazwisko()" onmouseover="kolora()" onmouseout="kolorb()">
+</form>
+<script>
+function nazwisko(){
+	document.getElementById("pole1").value = "";
+}
+function kolora(){
+	document.getElementById("pole1").className = "inny";
+}
+function kolorb(){
+	document.getElementById("pole1").className = "normalny";
+}
+</script>
+</body>
+</html>

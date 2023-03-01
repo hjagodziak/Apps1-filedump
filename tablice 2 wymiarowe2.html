@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<h3>Do tablicy 10 elementowej wylosować cyfry 0 lub 1.<br>
+-jeżeli pierwsza i ostatnia wylosowana to 1 to komunikat "OK"<br>
+-ile zostało wylosowanych jedynek po zerze (np. 1 1 1 0 0 1 1 0 1 0 = 2)<br></h3>
+<script>
+var t = [];
+for(let i=0;i<10;i++){
+	t[i] = Math.round(Math.random());
+	document.write(t[i] + " ");
+}
+document.write("<br>");
+document.write("<br>");
+
+if(t[0]==1 && t[t.length-1]==1){
+	document.write("OK");
+}
+
+document.write("<br>");
+document.write("<br>");
+
+var licznik = 0;
+for(let i=0;i<=t.length-2;i++){
+	if(t[i]==0 && t[i+1]==1){
+		licznik++;
+	}
+}
+document.write("Wystąpiło: " + licznik);
+</script>
+</body>
+</html>

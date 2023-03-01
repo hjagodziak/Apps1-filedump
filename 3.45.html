@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<h1>Przykład 3.45</h1>
+<script>
+var osoba = {
+	nazwisko: "Nowacki",
+	imie: "Marek",
+	zawod: "Informatyk",
+	pokaz: function() {
+		document.write(this.nazwisko + ' ' + this.imie);
+	}
+};
+osoba.wiek = 19;
+osoba.wypisz_wiek = function() {
+	document.write('Wiek: ' + this.wiek + ' lat');
+}
+osoba.wypisz_wiek();
+</script>
+</body>
+</html>

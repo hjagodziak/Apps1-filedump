@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+<script>
+// ile parzystych a ile nieparzystych w 10
+var liczba;
+var parzystych=0;
+var nieparzystych=0;
+
+for(var i=1;i<=10;i++){
+liczba=prompt('podaj liczbe');
+liczba=parseInt(liczba);
+if(liczba%2==0) parzystych++;
+	else nieparzystych++;
+}
+document.write("Parzystych: " + parzystych + "<br>");
+document.write("Nieparzystych: " + nieparzystych + "<br>");
+</script>
+
+</body>
+</html>
